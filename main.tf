@@ -1,10 +1,3 @@
-provider "aws" {
-  
-  shared_credentials_file = "/Users/varunkamarapu/.aws/credentials"
-  profile = "iamadmin-general"
-}
-
-
 resource "aws_iam_user" "iam_users"{
 name = var.iam-users[count.index]
 tags = {
